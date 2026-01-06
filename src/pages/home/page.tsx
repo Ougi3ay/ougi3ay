@@ -1,5 +1,5 @@
 import { ThemeToggle } from "@/components/theme-toggle";
-import usePageData from "@/hooks/use-page-data";
+import usePageData from "@/hooks/use-data";
 
 export default function Home() {
     const data = usePageData('pages.json');

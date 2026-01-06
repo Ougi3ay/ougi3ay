@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./hooks/use-theme";
-import Home from "./pages/home/page";
 import AppLayout from "./pages/layout";
+import AppRouter from "./router/app";
 
 
 export default function App() {
@@ -9,9 +9,7 @@ export default function App() {
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ThemeProvider>
         <AppLayout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
+          <AppRouter />
         </AppLayout>
       </ThemeProvider>
     </BrowserRouter>
