@@ -8,16 +8,12 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-    --color-text: var(--text-color);
-    --color-brand: var(--brand-color);
-    --color-surface: var(--surface-color);
+    --color-brand: var(--brand);
 }
 
 /* Light mode*/
 :root {
-    --text-color: #1e293b;
-    --brand-color: #3b82f6;
-    --surface-color: #ffffff;
+    --brand: #019848;
     --radius: 0.625rem;
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
@@ -51,26 +47,6 @@
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
 }
-
-/* Dark mode */
-[data-theme="dark"] {
-    --text-color: #e0e7ff;
-    --brand-color: #60a5fa;
-    --surface-color: #0f172a;
-}
-
-[data-theme="coffee"] {
-    --text-color: #3b2f2f;
-    --brand-color: #92400e;
-    --surface-color: #fef3c7;
-}
-
-[data-theme="neon"] {
-    --text-color: #39ff14;
-    --brand-color: #f0abfc;
-    --surface-color: #2e1065;
-}
-
 /*
     ---break---
 */
@@ -121,6 +97,7 @@
 */
 
 .dark {
+    --brand: #019848;
     --background: oklch(0.145 0 0);
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
