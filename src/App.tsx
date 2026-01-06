@@ -1,9 +1,13 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+
+
 export default function App() {
   return (
-    <div style={{ padding: "2rem", fontFamily: "Arial" }}>
-      <h1>Ougi Portfolio</h1>
-      <p>React + GitHub Pages + CI/CD</p>
-      <p>Deployed automatically with GitHub Actions</p>
-    </div>
+    <BrowserRouter basename="/ougi">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
