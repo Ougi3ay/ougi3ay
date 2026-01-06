@@ -14,7 +14,7 @@ export default function NavBar() {
             </div>
             <div>
                 <div>
-                    {pages && pages.map((page: any) => (
+                    {pages && pages.pages.map((page: any) => (
                         <NavLink
                             key={page.path}
                             to={page.path}

@@ -1,13 +1,14 @@
 import { Route, Routes, } from "react-router-dom";
 import { Registry } from "./registry";
 import { useDataContext } from "@/hooks/use-data";
+import RootLayout from "@/pages/layout";
 
 export default function AppRouter() {
     const { pages } = useDataContext();
 
     return (
         <Routes>
-            <Route>
+            <Route element={<RootLayout />}>
                 {pages && pages.pages.map((page: any) => {
                     const entry = Registry[page.component.toLowerCase()];
                     if (!entry) {
@@ -21,6 +22,8 @@ export default function AppRouter() {
 
                     return <Route key={page.path} path={page.path} element={element} />;
                 })}
+
+                <Route path="*" element={<div>404 Not Found</div>} />
             </Route>
         </Routes>
     )
