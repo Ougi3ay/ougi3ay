@@ -18,14 +18,14 @@
         {
             "id" : 1,
             "name": "Khmer Stop Word Remover",
-            "image": "public/images/projects/stopwords.png",
+            "image": "/images/projects/stopwords.png",
             "description": "A Python package that removes stop words from Khmer text, enhancing natural language processing tasks.",
             "link": "https://github.com/madpaddad/KhmerStopWord"
         },
         {
             "id" : 2,
             "name": "Network Scanner",
-            "image": "public/images/projects/network_scan.jpeg",
+            "image": "/images/projects/network_scan.jpeg",
             "description": "A tool to scan and analyze network devices, providing insights into network performance and security.",
             "link": "https://github.com/zhangwusan/scan_network"
         }
@@ -86,31 +86,31 @@
             "id": 1,
             "name": "Python",
             "level": "Advanced",
-            "icon" : "public/images/skills/python.svg"
+            "icon" : "/images/skills/python.svg"
         },
         {
             "id": 3,
             "name": "React",
             "level": "Intermediate",
-            "icon" : "public/images/skills/react.svg"
+            "icon" : "/images/skills/react.svg"
         },
         {
             "id": 4,
             "name": "TypeScript",
             "level": "Intermediate",
-            "icon" : "public/images/skills/typescript.svg"
+            "icon" : "/images/skills/typescript.svg"
         },
         {
             "id": 5,
             "name": "SQL",
             "level": "Intermediate",
-            "icon" : "public/images/skills/sql.svg"
+            "icon" : "/images/skills/sql.svg"
         },
         {
             "id": 6,
             "name": "Machine Learning",
             "level": "Intermediate",
-            "icon" : "public/images/skills/machine_learning.svg"
+            "icon" : "/images/skills/machine_learning.svg"
         }
     ]
 }

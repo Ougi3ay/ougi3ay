@@ -75,7 +75,7 @@ export default function HomePage() {
                         <Card key={project.id} className="mb-6">
                             <AspectRatio ratio={16 / 9}>
                                 <img
-                                    src={project.image}
+                                    src={`${import.meta.env.BASE_URL}${project.image}`}
                                     alt={project.name}
                                     className="h-full w-full object-cover"
                                 />
@@ -106,7 +106,7 @@ export default function HomePage() {
                     {skills?.map((skill: any) => (
                         <div key={skill.id} className="flex items-center gap-2 rounded-md border px-3 py-2 bg-background hover:bg-accent transition">
                             <img
-                                src={skill.icon}
+                                src={`${import.meta.env.BASE_URL}${skill.icon}`}
                                 alt={skill.name + " icon"}
                                 className="h-6 w-6"
                             />
