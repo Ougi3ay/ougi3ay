@@ -1,4 +1,8 @@
 {
+    "logo" : {
+        "text" : "OUGI",
+        "image" : "/logo.png"
+    },
     "pages" : [
         {
             "name" : "Home", "path" : "/", "component" : "Home"

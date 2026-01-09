@@ -23,7 +23,7 @@ interface DataProviderProps {
   files?: string[]; // allow multiple JSON files
 }
 
-export const DataProvider = ({ children, files = ["data.json", "pages.json"] }: DataProviderProps) => {
+export const DataProvider = ({ children, files = ["data.json", "meta.json"] }: DataProviderProps) => {
   const [data, setData] = useState<DataMap | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
