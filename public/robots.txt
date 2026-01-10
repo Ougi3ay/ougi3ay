@@ -1,0 +1,6 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow:
+
+# Sitemap link (optional but recommended)
+Sitemap: https://Ougi3ay.github.io/sitemap.xml
