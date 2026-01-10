@@ -15,9 +15,6 @@
         },
         {
             "name" : "Contact", "path" : "/contact", "component" : "Contact"
-        },
-        {
-            "name" : "Skills", "path" : "/skills", "component" : "Skills"
         }
     ]
 }
