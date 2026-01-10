@@ -1,7 +1,11 @@
 User-agent: Googlebot
 Disallow: /nogooglebot/
 
+User-agent: magicsearchbot
+Disallow: /uploads/
+
 User-agent: *
 Allow: /
+Disallow: /private/
 
 Sitemap: https://ougi3ay.github.io/ougi3ay/sitemap.xml
