@@ -79,8 +79,8 @@ export default function Navbar() {
                                 </Link>
                             ))}
                         </div>
-                        <div className="mt-6 border-t pt-6">
-                            <ModeToggle />
+                        <div className="mt-6 border-t py-6 px-4 flex justify-between items-center">
+                            <div>Appearance</div><ModeToggle />
                         </div>
                     </SheetContent>
                 </Sheet>
