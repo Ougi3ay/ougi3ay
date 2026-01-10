@@ -6,7 +6,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/ougi/',
+  base: '/ougi3ay/',
   plugins: [
     tailwindcss(),
     react(),
