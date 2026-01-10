@@ -1,5 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
 Allow: /
-Disallow:
 
 Sitemap: https://ougi3ay.github.io/ougi3ay/sitemap.xml
