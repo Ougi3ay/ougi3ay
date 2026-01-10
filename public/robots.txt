@@ -1,6 +1,11 @@
-# Allow all search engines to crawl everything
-User-agent: *
-Disallow:
+User-agent: Googlebot
+Disallow: /nogooglebot/
 
-# Sitemap link (optional but recommended)
-Sitemap: https://Ougi3ay.github.io/sitemap.xml
+User-agent: magicsearchbot
+Disallow: /uploads/
+
+User-agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://ougi3ay.github.io/ougi3ay/sitemap.xml
