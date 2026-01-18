@@ -57,14 +57,16 @@
             "name": "Khmer Stop Word Remover",
             "image": "/images/projects/stopwords.png",
             "description": "A Python package that removes stop words from Khmer text, enhancing natural language processing tasks.",
-            "link": "https://github.com/madpaddad/KhmerStopWord"
+            "link": "https://github.com/madpaddad/KhmerStopWord",
+            "category": "Data Science"
         },
         {
             "id": 2,
             "name": "Network Scanner",
             "image": "/images/projects/network_scan.jpeg",
             "description": "A tool to scan and analyze network devices, providing insights into network performance and security.",
-            "link": "https://github.com/zhangwusan/scan_network"
+            "link": "https://github.com/zhangwusan/scan_network",
+            "category": "Cyber Security"
         },
         {
             "id": 3,
@@ -72,7 +74,7 @@
             "image": "/images/projects/g4f_ecommerce.png",
             "description": "A full-stack e-commerce platform built as a database course project. It includes a scalable REST API, a modern Next.js frontend, and a data scraper pipeline. The system supports authentication, product & category management, orders, payments, and role-based access control.",
             "link": "https://github.com/zhangwusan/g4f-ecommerce",
-            "category": "Full-Stack / Database System"
+            "category": "Full Stack"
         },
         {
             "id": 4,
@@ -80,7 +82,7 @@
             "image": "/images/projects/hardhat_ai.jpg",
             "description": "An AI-powered object detection system for detecting hard hats, safety vests, and heads in images and videos. Built with PyTorch and YOLO, includes dataset preparation, training, validation, and real-time detection.",
             "link": "https://github.com/zhangwusan/detection-hat-vest-head-ai-project",
-            "category": "AI / Computer Vision"
+            "category": "AI"
         },
         {
             "id": 5,
@@ -88,7 +90,7 @@
             "image": "/images/projects/risk_dataset_analysis.webp",
             "link": "https://colab.research.google.com/drive/1chL5w_LvQwmlyDKK9HQN1elx2f6BfPLx?usp=sharing",
             "description": "A comprehensive analysis of a risk dataset using Python, Pandas, and Matplotlib. The project includes data cleaning, exploratory data analysis, and visualization to uncover insights and patterns.",
-            "category": "Data Analysis / Visualization"
+            "category": "Data Analysis"
         }
     ],
     "about": {
@@ -112,7 +114,7 @@
                 "duration": "Aug 2025 – Oct 2025",
                 "description": "Performed data cleaning, analysis, and dashboard support using Laravel, Vuexy, and Flutter applications.",
                 "image": "/images/companies/calmette_hospital.png",
-                "link" : "https://www.calmette.gov.kh/"
+                "link": "https://www.calmette.gov.kh/"
             },
             {
                 "id": 2,
@@ -132,7 +134,7 @@
                 "duration": "2023 – Present",
                 "description": "Engaged in projects involving data analysis, machine learning, and software development to strengthen practical skills.",
                 "image": "/images/companies/reda_lab.jpg",
-                "link" : "https://www.facebook.com/people/Research-and-Data-Analytics-Lab/61577145037198/"
+                "link": "https://www.facebook.com/people/Research-and-Data-Analytics-Lab/61577145037198/"
             }
         ],
         "educations": [
@@ -212,5 +214,14 @@
             "level": "Intermediate",
             "icon": "/images/skills/machine_learning.svg"
         }
-    ]
+    ],
+    "cvOptions": {
+        "download": true,
+        "style": "modern",
+        "language": "en",
+        "includeProjects": true,
+        "includeExperiences": true,
+        "includeEducation": true,
+        "includeSkills": true
+    }
 }

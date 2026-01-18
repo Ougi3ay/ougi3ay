@@ -7,12 +7,13 @@ import { Menu } from "lucide-react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { DownloadCV } from "../cv-download";
 
 
 export default function Navbar() {
     const { data } = useDataContext();
     const { pathname } = useLocation();
-    const [ _open, setOpen] = useState(false);
+    const [_open, setOpen] = useState(false);
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
@@ -43,13 +44,14 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <ModeToggle />
+                    <DownloadCV data={data} className="text-sm" />
                 </nav>
 
                 {/* Mobile Menu */}
                 <Sheet>
                     <SheetTrigger asChild>
                         <Button variant="ghost" size="icon" className="md:hidden">
-                            <Menu size={20} className="text-primary"/>
+                            <Menu size={20} className="text-primary" />
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right">
@@ -85,6 +87,6 @@ export default function Navbar() {
                     </SheetContent>
                 </Sheet>
             </div>
-        </header>
+        </header >
     )
 }
