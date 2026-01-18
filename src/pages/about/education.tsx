@@ -1,12 +1,17 @@
+import Image from "@/components/image";
+
 interface Props {
     educations: {
         id: number;
         degree: string;
         institution: string;
         year: string;
-        details: string;
+        description: string;
+        image?: string;
+        location?: string;
     }[];
 }
+
 
 export default function AboutEducation({ educations }: Props) {
     if (!educations?.length) return null;
@@ -16,15 +21,35 @@ export default function AboutEducation({ educations }: Props) {
             <h2 className="text-2xl font-semibold mb-6">Education</h2>
 
             <div className="space-y-6">
-                {educations.map((edu, index) => (
-                    <div key={index} className="rounded-xl border p-6">
-                        <h3 className="font-semibold">{edu.degree}</h3>
-                        <p className="text-sm text-muted-foreground">
-                            {edu.institution} · {edu.year}
-                        </p>
-                        <p className="mt-2 text-sm text-muted-foreground">
-                            {edu.details}
-                        </p>
+                {educations.map((edu) => (
+                    <div
+                        key={edu.id}
+                        className="flex items-start space-x-4 rounded-xl border p-6 hover:shadow-lg transition"
+                    >
+                        {edu.image && (
+                            <Image
+                                src={edu.image}
+                                alt={`${edu.institution} logo`}
+                                className="w-24 h-24 object-contain rounded"
+                            />
+                        )}
+                        <div>
+                            <h3 className="font-semibold text-lg">{edu.degree}</h3>
+                            <p className="text-sm text-muted-foreground">
+                                {edu.institution} · {edu.year}{" "}
+                                {edu.location && (
+                                    <a
+                                        href={edu.location}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-primary hover:underline ml-1"
+                                    >
+                                        [Location]
+                                    </a>
+                                )}
+                            </p>
+                            <p className="mt-2 text-sm text-muted-foreground">{edu.description}</p>
+                        </div>
                     </div>
                 ))}
             </div>

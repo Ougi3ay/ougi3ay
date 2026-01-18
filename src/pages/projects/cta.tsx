@@ -12,7 +12,7 @@ export default function ProjectsCTA() {
                 Check out my GitHub for more projects and open-source work.
             </p>
 
-            <Button asChild size="lg" className="mt-6">
+            <Button asChild size="lg" className="mt-6 text-white">
                 <Link to="/contact">Get in touch</Link>
             </Button>
         </section>
