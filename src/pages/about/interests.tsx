@@ -1,11 +1,9 @@
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "react-i18next";
 
-interface AboutInterestsProps {
-  interests?: string[];
-}
-
-export default function AboutInterests({ interests }: AboutInterestsProps) {
-  if (!interests || interests.length === 0) return null;
+export default function AboutInterests() {
+  const { t } = useTranslation();
+  const interests = t('about.interests', { returnObjects: true }) as string[];
 
   return (
     <section className="container mx-auto px-4 max-w-4xl">

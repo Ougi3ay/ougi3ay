@@ -1,0 +1,89 @@
+{
+    "link": "/about",
+    "summary": "I am a software enthusiast passionate about building projects and gaining hands-on experience to enhance my skills.",
+    "content": "I enjoy working on projects that challenge me to grow and learn continuously. With strong problem-solving and analytical skills, I approach tasks methodically and creatively. In group work, I value collaboration and learning from others to deliver effective and meaningful solutions.",
+    "mission": "My mission is to develop software that enhances skills, fosters learning, and contributes to impactful and collaborative projects.",
+    "values": [
+        "Continuous learning",
+        "Problem-solving & analytical thinking",
+        "Collaboration",
+        "Hands-on experience",
+        "Delivering meaningful solutions"
+    ],
+    "experiences": [
+        {
+            "id": 1,
+            "role": "Data Analysis Intern",
+            "company": "Calmette Hospital",
+            "location": "Cambodia",
+            "duration": "Aug 2025 – Oct 2025",
+            "description": "Performed data cleaning, analysis, and dashboard support using Laravel, Vuexy, and Flutter applications.",
+            "image": "/images/companies/calmette_hospital.png",
+            "link": "https://www.calmette.gov.kh/"
+        },
+        {
+            "id": 2,
+            "role": "Backend Developer Trainee",
+            "company": "CamCyber BootCamp",
+            "location": "Cambodia",
+            "duration": "Nov 2024 – 2025",
+            "description": "Built a Rent Home REST API using NestJS, managed Postgres databases, integrated JSReport for reporting, and implemented JWT authentication.",
+            "image": "/images/companies/camcyber.jpeg",
+            "link": "https://www.linkedin.com/company/camcyber/?originalSubdomain=kh"
+        },
+        {
+            "id": 3,
+            "role": "Student Researcher",
+            "company": "ReDA Lab",
+            "location": "Cambodia",
+            "duration": "2023 – Present",
+            "description": "Engaged in projects involving data analysis, machine learning, and software development to strengthen practical skills.",
+            "image": "/images/companies/reda_lab.jpg",
+            "link": "https://www.facebook.com/people/Research-and-Data-Analytics-Lab/61577145037198/"
+        }
+    ],
+    "educations": [
+        {
+            "id": 1,
+            "degree": "Engineering degree in Data Science",
+            "institution": "Institute of Technology of Cambodia",
+            "year": "2021 - Present",
+            "location": "https://www.google.com/maps?ll=11.570398,104.898086&z=14&t=m&hl=en-US&gl=US&mapclient=embed&cid=445953010211318005",
+            "description": "Specialized in data analysis, machine learning, and big data technologies.",
+            "image": "/images/educations/itc.jpeg"
+        },
+        {
+            "id": 2,
+            "degree": "General English Program",
+            "institution": "Australian Centre for Education",
+            "year": "2023 - Present",
+            "location": "",
+            "description": "Focused on improving English language skills for academic and professional purposes.",
+            "image": "/images/educations/ace.png"
+        },
+        {
+            "id": 3,
+            "degree": "Full Stack Web Development",
+            "institution": "CamCyber Digital Tech Team",
+            "year": "2024 - Present",
+            "location": "",
+            "description": "Comprehensive training in frontend and backend web development technologies.",
+            "image": "/images/educations/camcyber.jpeg"
+        },
+        {
+            "id": 4,
+            "degree": "Penetration Testing",
+            "institution": "ANT Technology Training Center & ThinkCyber",
+            "year": "2024 - 2025",
+            "location": "",
+            "description": "Learning advanced techniques in ethical hacking and cybersecurity.",
+            "image": "/images/educations/ant.png"
+        }
+    ],
+    "interests": [
+        "Machine Learning",
+        "System Design",
+        "Cybersecurity",
+        "Open Source"
+    ]
+}

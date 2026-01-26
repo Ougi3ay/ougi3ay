@@ -1,0 +1,44 @@
+{
+    "list": [
+         {
+            "id": 1,
+            "name": "Hard Hat & Vest Detection AI Project",
+            "image": "/images/projects/hardhat_ai.jpg",
+            "description": "An AI-powered object detection system for detecting hard hats, safety vests, and heads in images and videos. Built with PyTorch and YOLO, includes dataset preparation, training, validation, and real-time detection.",
+            "link": "https://github.com/zhangwusan/detection-hat-vest-head-ai-project",
+            "category": "AI"
+        },
+        {
+            "id": 2,
+            "name": "Khmer Stop Word Remover",
+            "image": "/images/projects/stopwords.png",
+            "description": "A Python package that removes stop words from Khmer text, enhancing natural language processing tasks.",
+            "link": "https://github.com/madpaddad/KhmerStopWord",
+            "category": "Data Science"
+        },
+        {
+            "id": 3,
+            "name": "G4F E-Commerce Platform",
+            "image": "/images/projects/g4f_ecommerce.png",
+            "description": "A full-stack e-commerce platform built as a database course project. It includes a scalable REST API, a modern Next.js frontend, and a data scraper pipeline. The system supports authentication, product & category management, orders, payments, and role-based access control.",
+            "link": "https://github.com/zhangwusan/g4f-ecommerce",
+            "category": "Full Stack"
+        },
+        {
+            "id": 4,
+            "name": "Network Scanner",
+            "image": "/images/projects/network_scan.jpeg",
+            "description": "A tool to scan and analyze network devices, providing insights into network performance and security.",
+            "link": "https://github.com/zhangwusan/scan_network",
+            "category": "Cyber Security"
+        },
+        {
+            "id": 5,
+            "name": "Project Management Risk Dataset Analysis",
+            "image": "/images/projects/risk_dataset_analysis.webp",
+            "link": "https://colab.research.google.com/drive/1chL5w_LvQwmlyDKK9HQN1elx2f6BfPLx?usp=sharing",
+            "description": "A comprehensive analysis of a risk dataset using Python, Pandas, and Matplotlib. The project includes data cleaning, exploratory data analysis, and visualization to uncover insights and patterns.",
+            "category": "Data Analysis"
+        }
+    ]
+}

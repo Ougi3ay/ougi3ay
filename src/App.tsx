@@ -1,18 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./hooks/use-theme";
-import { DataProvider } from "./hooks/use-data";
 import AppRoutes from "./routes";
 import { Toaster } from "./components/ui/sonner";
+import './i18n';
 
 
 export default function App() {
   return (
     <ThemeProvider defaultTheme="dark">
-      <Toaster/>
+      <Toaster />
       <BrowserRouter basename={import.meta.env.BASE_URL}>
-        <DataProvider>
-          <AppRoutes />
-        </DataProvider>
+        <AppRoutes />
       </BrowserRouter>
     </ThemeProvider>
   );

@@ -1,4 +1,3 @@
-import { useDataContext } from "@/hooks/use-data";
 import SkillsSection from "./skill";
 import ProjectsSection from "./project";
 import HeroSection from "./hero";
@@ -6,30 +5,22 @@ import AboutSection from "./about";
 import CTASection from "./cta";
 
 export default function HomePage() {
-  const { data } = useDataContext();
-
-  const home = data?.data?.home;
-  const projects = data?.data?.projects;
-  const skills = data?.data?.skills;
-
-  if (!home) return null;
-
   return (
     <main className="flex flex-col">
       {/* Hero */}
-      <HeroSection hero={home.hero} />
+      <HeroSection />
 
       {/* About Preview */}
-      <AboutSection about={home.about} />
+      <AboutSection />
 
       {/* Featured Projects */}
-      <ProjectsSection projects={projects} />
+      <ProjectsSection />
 
       {/* Skills */}
-      <SkillsSection skills={skills} />
+      <SkillsSection />
 
       {/* Call to Action */}
-      <CTASection cta={home.cta} />
+      <CTASection />
     </main>
   );
 }

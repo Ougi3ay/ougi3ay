@@ -1,24 +1,25 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface Highlight {
     title: string;
     description: string;
 }
 
-interface AboutSectionProps {
-    about: {
-        summary: string;
-        highlights?: Highlight[];
-        ctaText?: string;
-        link?: string;
-        personalNote?: string;
-    };
+interface AboutSection {
+    summary: string;
+    highlights?: Highlight[];
+    ctaText?: string;
+    link?: string;
+    personalNote?: string;
 }
 
-export default function AboutSection({ about }: AboutSectionProps) {
-    if (!about) return null;
+export default function AboutSection() {
+    const { t } = useTranslation();
+
+    const about = t('home.about', { returnObjects: true }) as AboutSection;
 
     return (
         <section className="container mx-auto px-4 pb-28">

@@ -1,4 +1,3 @@
-import { useDataContext } from "@/hooks/use-data"
 import { Link, useLocation } from "react-router-dom";
 import { ModeToggle } from "../mode-toggle";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
@@ -7,25 +6,29 @@ import { Menu } from "lucide-react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 
 export default function Navbar() {
-    const { data } = useDataContext();
+    const { t } = useTranslation();
+
+    const pages = t('home.pages', { returnObjects: true }) as Array<{ name: string; path: string }>;
+
     const { pathname } = useLocation();
-    const [ _open, setOpen] = useState(false);
+    const [_open, setOpen] = useState(false);
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
             <div className="container mx-auto flex h-16 items-center justify-between px-4">
                 {/* Logo */}
                 <Link to="/" className="text-xl font-bold text-primary tracking-tight hover:opacity-90">
-                    {data?.meta?.logo?.text || "MyLogo"}
+                    {t('home.logo.text') || "MyLogo"}
                     <span className="text-primary">.</span>
                 </Link>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-6">
-                    {data?.meta?.pages?.map((item: any) => (
+                    {pages.map((item) => (
                         <Link
                             to={item.path}
                             key={item.name}
@@ -43,13 +46,14 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <ModeToggle />
+                    {/* <DownloadCV data={data} className="text-sm" /> */}
                 </nav>
 
                 {/* Mobile Menu */}
                 <Sheet>
                     <SheetTrigger asChild>
                         <Button variant="ghost" size="icon" className="md:hidden">
-                            <Menu size={20} className="text-primary"/>
+                            <Menu size={20} className="text-primary" />
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right">
@@ -62,7 +66,7 @@ export default function Navbar() {
                             </VisuallyHidden>
                         </SheetHeader>
                         <div className="flex flex-col gap-4 mt-8">
-                            {data?.meta?.pages?.map((item: any) => (
+                            {pages.map((item) => (
                                 <Link
                                     to={item.path}
                                     key={item.name}
@@ -85,6 +89,6 @@ export default function Navbar() {
                     </SheetContent>
                 </Sheet>
             </div>
-        </header>
+        </header >
     )
 }

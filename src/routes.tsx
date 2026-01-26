@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { useDataContext } from "@/hooks/use-data";
 import RootLayout from "@/pages/layout";
 
 import HomePage from "@/pages/home/page";
@@ -7,6 +6,7 @@ import AboutPage from "@/pages/about/page";
 import ContactPage from "@/pages/contact/page";
 import ProjectsPage from "@/pages/projects/page";
 import SkillsPage from "@/pages/skills/page";
+import { useTranslation } from "react-i18next";
 
 const components = {
   Home: <HomePage />,
@@ -17,14 +17,14 @@ const components = {
 };
 
 export default function AppRoutes() {
-  const { data } = useDataContext();
 
-  if (!data) return null;
+  const { t } = useTranslation();
+  const pages = t('home.pages', { returnObjects: true }) as Array<{ name: string; path: string }>;
 
   return (
     <Routes>
       <Route element={<RootLayout />}>
-        {data.meta.pages.map((page: any) => (
+        {pages.map((page) => (
           <Route
             key={page.path}
             path={page.path}

@@ -1,0 +1,34 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "name": "Python",
+            "level": "Advanced",
+            "icon": "/images/skills/python.svg"
+        },
+        {
+            "id": 3,
+            "name": "React",
+            "level": "Intermediate",
+            "icon": "/images/skills/react.svg"
+        },
+        {
+            "id": 4,
+            "name": "TypeScript",
+            "level": "Intermediate",
+            "icon": "/images/skills/typescript.svg"
+        },
+        {
+            "id": 5,
+            "name": "SQL",
+            "level": "Intermediate",
+            "icon": "/images/skills/sql.svg"
+        },
+        {
+            "id": 6,
+            "name": "Machine Learning",
+            "level": "Intermediate",
+            "icon": "/images/skills/machine_learning.svg"
+        }
+    ]
+}

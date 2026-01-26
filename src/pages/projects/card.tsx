@@ -2,15 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "@/components/image";
+import type { ProjectType } from "@/type";
 
 interface ProjectCardProps {
-    project: {
-        id: number;
-        name: string;
-        image: string;
-        description: string;
-        link: string;
-    };
+    project: ProjectType
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {

@@ -1,18 +1,11 @@
 import Image from "@/components/image";
+import type { ExperienceType } from "@/type";
+import { useTranslation } from "react-i18next";
 
-interface Props {
-    experiences: {
-        id: number;
-        role: string;
-        company: string;
-        description: string;
-        image?: string;
-        link?: string;
-    }[];
-}
+export default function AboutExperience() {
+    const { t } = useTranslation();
 
-export default function AboutExperience({ experiences }: Props) {
-    if (!experiences?.length) return null;
+    const experiences = t('about.experiences', { returnObjects: true }) as ExperienceType[];
 
     return (
         <section className="container mx-auto px-4 max-w-4xl">

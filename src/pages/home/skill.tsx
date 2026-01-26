@@ -1,19 +1,16 @@
-import Image from "@/components/image";
+import { SkillCard } from "@/components/skill-card";
+import type { SkillType } from "@/type";
 import { motion, useMotionValue, useReducedMotion, useAnimationFrame } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const SPEED = 40; // pixels per second
 
-interface SkillsSectionProps {
-    skills: Array<{
-        id: number;
-        name: string;
-        level: string;
-        icon: string;
-    }>
-}
+export default function SkillsSection() {
+    const { t } = useTranslation();
 
-export default function SkillsSection({ skills }: SkillsSectionProps) {
     const reduceMotion = useReducedMotion();
+
+    const skills = t('skill.list', { returnObjects: true }) as SkillType[];
 
     const x = useMotionValue(0);
 
@@ -50,36 +47,5 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
                 ))}
             </motion.div>
         </section>
-    );
-}
-
-type Skill = {
-    id: number;
-    name: string;
-    level: string;
-    icon: string;
-};
-
-export function SkillCard({ skill }: { skill: Skill }) {
-    return (
-        <motion.div
-            whileHover={{
-                scale: 1.07,
-                y: -4,
-            }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="flex w-50 shrink-0 items-center gap-3 rounded-xl border bg-background px-4 py-3 shadow-sm hover:shadow-lg"
-        >
-            <Image
-                src={skill.icon}
-                alt={`${skill.name} icon`}
-                className="h-8 w-8"
-            />
-
-            <div>
-                <p className="text-sm font-medium">{skill.name}</p>
-                <p className="text-xs text-muted-foreground">{skill.level}</p>
-            </div>
-        </motion.div>
     );
 }

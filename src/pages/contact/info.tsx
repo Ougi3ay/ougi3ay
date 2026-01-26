@@ -1,14 +1,15 @@
 import { Mail, MapPin, Github } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-interface ContactInfoProps {
-    contact: {
+
+export default function ContactInfo() {
+    const { t } = useTranslation();
+    const contact = t('contact', { returnObjects: true }) as {
         email: string;
         github: string;
         location: string;
     };
-}
-
-export default function ContactInfo({ contact }: ContactInfoProps) {
+    
     return (
         <section className="container mx-auto px-4 py-16 text-center">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">

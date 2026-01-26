@@ -1,20 +1,12 @@
 import Image from "@/components/image";
-
-interface Props {
-    educations: {
-        id: number;
-        degree: string;
-        institution: string;
-        year: string;
-        description: string;
-        image?: string;
-        location?: string;
-    }[];
-}
+import type { EducationType } from "@/type";
+import { useTranslation } from "react-i18next";
 
 
-export default function AboutEducation({ educations }: Props) {
-    if (!educations?.length) return null;
+export default function AboutEducation() {
+
+    const { t } = useTranslation();
+    const educations = t('about.educations', { returnObjects: true }) as EducationType[];
 
     return (
         <section className="container mx-auto px-4 max-w-4xl">
